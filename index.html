@@ -53,7 +53,7 @@
 	-webkit-box-orient: vertical;
 	-webkit-line-clamp: 2;
 }
-
+	
 @media (max-width: 768px) {
 	.list {
 		margin: -10px;
@@ -62,7 +62,7 @@
 	.list .item {
 		margin: 10px;
 		padding: 10px 15px;
-		width: 100%;
+		width: calc(50% - 20px);
 	}
 	
 	.list .img-area {
@@ -71,6 +71,12 @@
 	
 	.list .subject {
 		font-size: 13px;
+	}
+}
+
+@media (max-width: 480px) {
+	.list .item {
+		width: 100%;
 	}
 }
 </style>
