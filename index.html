@@ -6,6 +6,7 @@
 .list {
 	display: flex;
 	flex-wrap: wrap;
+	margin: -15px;
 }
 
 .list .item {
@@ -54,7 +55,12 @@
 }
 
 @media (max-width: 768px) {
+	.list {
+		margin: -10px;
+	}
+	
 	.list .item {
+		margin: 10px;
 		padding: 10px 15px;
 		width: 100%;
 	}
